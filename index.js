@@ -51,7 +51,7 @@ app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
 app.use("/api/posts", postRoute);
 app.use("/api/categories", categoryRoute);
-
+app.use("/api/upload",upload)
 app.listen("5000" || process.env.PORT, () => {
   console.log("Backend is running.");
 });
